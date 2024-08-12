@@ -1,0 +1,206 @@
+:root {
+  --primary-bg: rgb(24, 3, 8);
+  --secondary-bg: rgb(188, 129, 148);
+  --accent-bg: rgba(186, 69, 104);
+  --footer-bg: rgb(123, 44, 78);
+  --task-bg-even: rgb(190, 154, 166);
+  --task-item-bg: rgb(188, 129, 148);
+  --text-color: white;
+  --hover-shadow: rgba(186, 69, 104, 4.5);
+  --outer-glow: rgba(186, 69, 104, 1.5);
+}
+
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav a {
+  text-decoration: none;
+  margin-left: 1em;
+  color: var(--text-color);
+}
+
+header nav a:hover {
+  box-shadow: 0 0 20px var(--hover-shadow);
+}
+
+main {
+  width: 100%;
+  background-image: url(images/10705190.jpg); /*image taken from https://wallpaper.dog/large/10705190.jpg */
+}
+
+.main-container {
+  margin: 20px;
+  width: 800px;
+  max-width: 800px;
+  border-radius: 9px;
+  background-color: var(--secondary-bg);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 50px var(--outer-glow); /* Outer glow */
+  padding: 20px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.task-container input {
+  border-radius: 5px;
+  display: flex;
+  width: 110%;
+  height: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#addTaskbtn {
+  width: 200px;
+  background-color: var(--accent-bg);
+  color: var(--text-color);
+}
+
+#addTaskbtn:hover {
+  background-color: var(--accent-bg);
+  box-shadow: 0 0 20px var(--primary-bg);
+}
+
+.search {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  border-radius: 5px;
+  border-color: black;
+  display: flex;
+  height: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#searchBar {
+  width: 500px;
+}
+
+#searchTaskbtn {
+  width: 200px;
+  background-color: var(--accent-bg);
+  color: var(--text-color);
+}
+
+#searchTaskbtn:hover {
+  background-color: var(--accent-bg);
+  box-shadow: 0 0 20px var(--primary-bg);
+}
+
+footer {
+  background-color: var(--footer-bg);
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+footer nav ul {
+  display: flex;
+  margin-left: -40px;
+  list-style: none;
+}
+
+footer nav a {
+  text-decoration: none;
+  margin-left: 1em;
+  color: var(--text-color);
+}
+
+footer h3 {
+  padding: 20px;
+}
+
+.taskItem {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--task-item-bg);
+  width: 500px;
+}
+
+.taskItem:nth-child(even) {
+  background-color: var(--task-bg-even);
+}
+
+.taskDetails {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.editTask {
+  background-color: var(--accent-bg);
+  color: var(--text-color);
+  border-color: var(--accent-bg);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.editTask:hover {
+  background-color: var(--text-color);
+  color: black;
+}
+
+.deleteTask:hover {
+  background-color: var(--accent-bg);
+  color: var(--text-color);
+}
+
+.taskHead {
+  color: var(--primary-bg);
+}
+
+button {
+  width: 80px;
+  padding: 5px;
+}
